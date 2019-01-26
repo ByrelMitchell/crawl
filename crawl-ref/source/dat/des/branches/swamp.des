@@ -2375,7 +2375,7 @@ MONS:	 bog body / flayed ghost w:5 / death drake w:5 / ghost crab
 MONS:    hydra skeleton / swamp dragon skeleton / death drake skeleton / nothing w:60
 MONS:    hydra zombie / swamp dragon zombie / death drake zombie / nothing w:60
 MONS:    spectral hydra / hydra simulacrum
-MONS:    patrolling thorn hunter / shambling mangrove
+MONS:    patrolling thorn hunter / patrolling shambling mangrove
 MONS:    patrolling spriggan druid god:fedhas
 KITEM:   O = decaying rune of Zot
 KFEAT:   _ = altar_fedhas
