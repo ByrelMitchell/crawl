@@ -2361,3 +2361,63 @@ ttccccC'''cC'-'Cc'''1'1cctt
      ttttttttttttttttt t
        tt   ttt ttt t
 ENDMAP
+
+###############################################################################
+# Growth, Death and Undeath, by byrel
+#  
+NAME:    byrel_swamp_growth_death_and_undeath
+TAGS:    no_monster_gen
+PLACE:   Swamp:$
+ORIENT:  float
+TAGS:    no_rotate
+MONS:    swamp dragon / swamp drake / hydra
+MONS:	 bog body / flayed ghost w:5 / death drake w:5 / ghost crab
+MONS:    hydra skeleton / swamp dragon skeleton / death drake skeleton / nothing w:60
+MONS:    hydra zombie / swamp dragon zombie / death drake zombie / nothing w:60
+MONS:    spectral hydra / hydra simulacrum
+MONS:    patrolling thorn hunter / shambling mangrove
+MONS:    patrolling spriggan druid god:fedhas
+KITEM:   O = decaying rune of Zot
+KFEAT:   _ = altar_fedhas
+KFEAT:   D = altar_yredelemnul
+NSUBST:  O = 1:O / *:%
+SUBST:   x = xxt
+SUBST:   1 = 1.W
+NSUBST:  3 = 3:5 / 3:T / 2:G / *:3
+SUBST:   3 = 344
+NSUBST:  P = 3:', *:ppW
+KMONS:   p = plant
+KMONS:   ' = oklob plant
+KMONS:   q = deep elf death mage
+TILE:    E = WALL_UNDEAD, T = DNGN_TREE_DEAD, G = DNGN_GRAVESTONE, x = WALL_BRICK_VINES
+SUBST:   E = c
+{{ 
+dgn.delayed_decay_extra(_G, 'o', 'human corpse')
+}}
+{{
+dgn.delayed_decay_extra(_G, 'q', 'hydra corpse')
+}}
+MAP
+         xxxx@@xx     
+        xxxx11xxxx          
+        xxx1111xxxx        
+       xxxx11111xxxx       
+      xxxx1111111xxxx      
+     xxxt1111111111xxx    
+    ccct.1111111111ccx     
+   cccct..tttxxxx..ccccc   
+  ccccct6.txxxxxxE5EEEEcc     
+ ccccP....tccccccE333sEcccc         
+cccc......ccccEEEE3333EEEcc   
+ccc........cccE2E3333EE2Eccc               
+ccP....o...PccEE53335333Eccc       
+cct6..P_P.6tcccE3333q335Eccc       
+cc6.P.7P7.P6cccE3333D333Eccc     
+ccPppPpppPppcccE2333333EEccc           
+ccccppppppcccccEEEE335EEcccc                     
+cccccccOcccccccccE235322Eccc            
+  cccccccccccccccEEOEEEEEcc
+    ccccccc    cccEEEcccccc
+      cc        ccccccc cc     
+	 
+ENDMAP
