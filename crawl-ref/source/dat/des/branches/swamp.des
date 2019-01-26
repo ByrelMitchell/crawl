@@ -2372,8 +2372,8 @@ ORIENT:  float
 TAGS:    no_rotate
 MONS:    swamp dragon / swamp drake / hydra
 MONS:	 bog body / flayed ghost w:5 / death drake w:5 / ghost crab
-MONS:    hydra skeleton / swamp dragon skeleton / death drake skeleton / nothing w:60
-MONS:    hydra zombie / swamp dragon zombie / death drake zombie / nothing w:60
+MONS:    hydra skeleton / swamp dragon skeleton / death drake skeleton
+MONS:    hydra zombie / swamp dragon zombie / death drake zombie
 MONS:    spectral hydra / hydra simulacrum
 MONS:    patrolling thorn hunter / patrolling shambling mangrove
 MONS:    patrolling spriggan druid god:fedhas
@@ -2383,9 +2383,9 @@ KFEAT:   D = altar_yredelemnul
 NSUBST:  O = 1:O / *:%
 SUBST:   x = xxt
 SUBST:   1 = 1.W
-NSUBST:  3 = 3:5 / 3:T / 2:G / *:3
+NSUBST:  3 = 3=5 / 3=T / 2=G / 3..
 SUBST:   3 = 344
-NSUBST:  P = 3:', *:ppW
+NSUBST:  P = 3=' / ppW
 KMONS:   p = plant
 KMONS:   ' = oklob plant
 KMONS:   q = deep elf death mage
